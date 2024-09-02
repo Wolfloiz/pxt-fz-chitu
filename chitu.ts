@@ -221,7 +221,7 @@ namespace chitu {
     * Line tracking sensor event function
     */
     //% weight=2
-    //% blockId=kb_event block="quando o sensor de linha |%value com nivel |%vi"
+    //% blockId=kb_event block="quando o sensor de linha |%value com nível |%vi"
     export function ltEvent(value: Patrol1, vi: Voltage, a: Action) {
         let state = value + vi;
         serial.writeNumber(state)
