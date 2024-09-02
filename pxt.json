@@ -1,13 +1,12 @@
 {
     "name": "Chitu",
-    "description": "Uma etensão para o micro:bit para o chitu um carro inteligente.",
+    "description": "Uma extensão para o micro:bit para o chitu carro inteligente.",
     "dependencies": {
         "core": "*"
     },
     "files": [
         "README.md",
-        "chitu.ts",
-        "locales/chitu-strings.json"
+        "chitu.ts"
     ],
     "testFiles": [
         "test.ts"

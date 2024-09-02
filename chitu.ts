@@ -47,9 +47,9 @@ namespace chitu {
     }
 
     export enum Dir {
-        //% blockId="CW" block="Frente"
+        //% blockId="CW" block="frente"
         CW = 0x0,
-        //% blockId="CCW" block="Ré"
+        //% blockId="CCW" block="trás"
         CCW = 0x1
     }
 
@@ -99,7 +99,7 @@ namespace chitu {
      */
 
     //% weight=90
-    //% blockId=motor_MotorRun block="Motor|%index|mover|%Dir|à velocidade|%speed"
+    //% blockId=motor_MotorRun block="Motor|%index|mover para|%Dir|com a velocidade|%speed"
     //% speed.min=0 speed.max=255
     //% index.fieldEditor="gridpicker" index.fieldOptions.columns=2
     //% direction.fieldEditor="gridpicker" direction.fieldOptions.columns=2
@@ -165,7 +165,7 @@ namespace chitu {
      */
 
     //% weight=20
-    //% blockId=read_Patrol block="ler |%patrol sensor de linha"
+    //% blockId=read_Patrol block="ler sensor de linha |%patrol"
     //% patrol.fieldEditor="gridpicker" patrol.fieldOptions.columns=2 
     export function readPatrol(patrol: Patrol): number {
         if (patrol == Patrol.PatrolLeft) {
@@ -202,7 +202,7 @@ namespace chitu {
      */
 
     //% weight=90
-    //% blockId=servo_ServoRun block="servo|%index|ângulo|%angle"
+    //% blockId=servo_ServoRun block="servo|%index|definir para ângulo|%angle"
     //% angle.min=0 angle.max=180
     //% index.fieldEditor="gridpicker" index.fieldOptions.columns=2
     export function servoRun(index: Servos, angle: number): void {
